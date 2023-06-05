@@ -1,0 +1,930 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 12
+Title ""
+Date "27 apr 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1800 950  0    60   Input ~ 0
+trigger_25_1-1
+Text HLabel 1800 1450 0    60   Input ~ 0
+trigger_25_1-2
+Text HLabel 1800 1950 0    60   Input ~ 0
+trigger_25_2-1
+Text HLabel 1800 2450 0    60   Input ~ 0
+trigger_25_2-2
+Text HLabel 1800 2950 0    60   Input ~ 0
+trigger_25_3-1
+Text HLabel 1800 3450 0    60   Input ~ 0
+trigger_25_3-2
+Text HLabel 1800 3950 0    60   Input ~ 0
+trigger_25_3-3
+Text HLabel 1800 4450 0    60   Input ~ 0
+trigger_32_1-1
+Text HLabel 1800 4950 0    60   Input ~ 0
+trigger_32_1-2
+Text HLabel 1800 5450 0    60   Input ~ 0
+trigger_32_2-1
+Text HLabel 1800 5950 0    60   Input ~ 0
+trigger_32_2-2
+Text HLabel 1800 6450 0    60   Input ~ 0
+trigger_32_3-1
+Text HLabel 1800 6950 0    60   Input ~ 0
+trigger_32_3-2
+Text HLabel 1800 7450 0    60   Input ~ 0
+trigger_32_3-3
+Text HLabel 6350 800  1    60   Input ~ 0
+5V
+Text HLabel 6050 800  1    60   Input ~ 0
+3.3V
+Text HLabel 3400 800  1    60   Input ~ 0
+GND
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D39
+U 1 1 553BF2F5
+P 2700 850
+F 0 "D39" H 2700 950 40  0000 C CNN
+F 1 "DIODESCH" H 2700 750 40  0000 C CNN
+F 2 "~" H 2700 850 60  0000 C CNN
+F 3 "~" H 2700 850 60  0000 C CNN
+	1    2700 850 
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D40
+U 1 1 553BF304
+P 2700 1100
+F 0 "D40" H 2700 1200 50  0000 C CNN
+F 1 "ZENER" H 2700 1000 40  0000 C CNN
+F 2 "~" H 2700 1100 60  0000 C CNN
+F 3 "~" H 2700 1100 60  0000 C CNN
+	1    2700 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R87
+U 1 1 553BF313
+P 2150 950
+F 0 "R87" V 2230 950 40  0000 C CNN
+F 1 "2.2k" V 2157 951 40  0000 C CNN
+F 2 "~" V 2080 950 30  0000 C CNN
+F 3 "~" H 2150 950 30  0000 C CNN
+	1    2150 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R88
+U 1 1 553BF35D
+P 2150 1450
+F 0 "R88" V 2230 1450 40  0000 C CNN
+F 1 "2.2k" V 2157 1451 40  0000 C CNN
+F 2 "~" V 2080 1450 30  0000 C CNN
+F 3 "~" H 2150 1450 30  0000 C CNN
+	1    2150 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D41
+U 1 1 553BF363
+P 2700 1350
+F 0 "D41" H 2700 1450 40  0000 C CNN
+F 1 "DIODESCH" H 2700 1250 40  0000 C CNN
+F 2 "~" H 2700 1350 60  0000 C CNN
+F 3 "~" H 2700 1350 60  0000 C CNN
+	1    2700 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D42
+U 1 1 553BF369
+P 2700 1600
+F 0 "D42" H 2700 1700 50  0000 C CNN
+F 1 "ZENER" H 2700 1500 40  0000 C CNN
+F 2 "~" H 2700 1600 60  0000 C CNN
+F 3 "~" H 2700 1600 60  0000 C CNN
+	1    2700 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R89
+U 1 1 553BF36F
+P 2150 1950
+F 0 "R89" V 2230 1950 40  0000 C CNN
+F 1 "2.2k" V 2157 1951 40  0000 C CNN
+F 2 "~" V 2080 1950 30  0000 C CNN
+F 3 "~" H 2150 1950 30  0000 C CNN
+	1    2150 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D43
+U 1 1 553BF375
+P 2700 1850
+F 0 "D43" H 2700 1950 40  0000 C CNN
+F 1 "DIODESCH" H 2700 1750 40  0000 C CNN
+F 2 "~" H 2700 1850 60  0000 C CNN
+F 3 "~" H 2700 1850 60  0000 C CNN
+	1    2700 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D44
+U 1 1 553BF37B
+P 2700 2100
+F 0 "D44" H 2700 2200 50  0000 C CNN
+F 1 "ZENER" H 2700 2000 40  0000 C CNN
+F 2 "~" H 2700 2100 60  0000 C CNN
+F 3 "~" H 2700 2100 60  0000 C CNN
+	1    2700 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R90
+U 1 1 553BF392
+P 2150 2450
+F 0 "R90" V 2230 2450 40  0000 C CNN
+F 1 "2.2k" V 2157 2451 40  0000 C CNN
+F 2 "~" V 2080 2450 30  0000 C CNN
+F 3 "~" H 2150 2450 30  0000 C CNN
+	1    2150 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D45
+U 1 1 553BF398
+P 2700 2350
+F 0 "D45" H 2700 2450 40  0000 C CNN
+F 1 "DIODESCH" H 2700 2250 40  0000 C CNN
+F 2 "~" H 2700 2350 60  0000 C CNN
+F 3 "~" H 2700 2350 60  0000 C CNN
+	1    2700 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D46
+U 1 1 553BF39E
+P 2700 2600
+F 0 "D46" H 2700 2700 50  0000 C CNN
+F 1 "ZENER" H 2700 2500 40  0000 C CNN
+F 2 "~" H 2700 2600 60  0000 C CNN
+F 3 "~" H 2700 2600 60  0000 C CNN
+	1    2700 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R91
+U 1 1 553BF3A6
+P 2150 2950
+F 0 "R91" V 2230 2950 40  0000 C CNN
+F 1 "2.2k" V 2157 2951 40  0000 C CNN
+F 2 "~" V 2080 2950 30  0000 C CNN
+F 3 "~" H 2150 2950 30  0000 C CNN
+	1    2150 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D47
+U 1 1 553BF3AC
+P 2700 2850
+F 0 "D47" H 2700 2950 40  0000 C CNN
+F 1 "DIODESCH" H 2700 2750 40  0000 C CNN
+F 2 "~" H 2700 2850 60  0000 C CNN
+F 3 "~" H 2700 2850 60  0000 C CNN
+	1    2700 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D48
+U 1 1 553BF3B2
+P 2700 3100
+F 0 "D48" H 2700 3200 50  0000 C CNN
+F 1 "ZENER" H 2700 3000 40  0000 C CNN
+F 2 "~" H 2700 3100 60  0000 C CNN
+F 3 "~" H 2700 3100 60  0000 C CNN
+	1    2700 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R92
+U 1 1 553BF3FC
+P 2150 3450
+F 0 "R92" V 2230 3450 40  0000 C CNN
+F 1 "2.2k" V 2157 3451 40  0000 C CNN
+F 2 "~" V 2080 3450 30  0000 C CNN
+F 3 "~" H 2150 3450 30  0000 C CNN
+	1    2150 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D49
+U 1 1 553BF402
+P 2700 3350
+F 0 "D49" H 2700 3450 40  0000 C CNN
+F 1 "DIODESCH" H 2700 3250 40  0000 C CNN
+F 2 "~" H 2700 3350 60  0000 C CNN
+F 3 "~" H 2700 3350 60  0000 C CNN
+	1    2700 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D50
+U 1 1 553BF408
+P 2700 3600
+F 0 "D50" H 2700 3700 50  0000 C CNN
+F 1 "ZENER" H 2700 3500 40  0000 C CNN
+F 2 "~" H 2700 3600 60  0000 C CNN
+F 3 "~" H 2700 3600 60  0000 C CNN
+	1    2700 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R93
+U 1 1 553BF414
+P 2150 3950
+F 0 "R93" V 2230 3950 40  0000 C CNN
+F 1 "2.2k" V 2157 3951 40  0000 C CNN
+F 2 "~" V 2080 3950 30  0000 C CNN
+F 3 "~" H 2150 3950 30  0000 C CNN
+	1    2150 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D51
+U 1 1 553BF41A
+P 2700 3850
+F 0 "D51" H 2700 3950 40  0000 C CNN
+F 1 "DIODESCH" H 2700 3750 40  0000 C CNN
+F 2 "~" H 2700 3850 60  0000 C CNN
+F 3 "~" H 2700 3850 60  0000 C CNN
+	1    2700 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D52
+U 1 1 553BF420
+P 2700 4100
+F 0 "D52" H 2700 4200 50  0000 C CNN
+F 1 "ZENER" H 2700 4000 40  0000 C CNN
+F 2 "~" H 2700 4100 60  0000 C CNN
+F 3 "~" H 2700 4100 60  0000 C CNN
+	1    2700 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R94
+U 1 1 553BF42E
+P 2150 4450
+F 0 "R94" V 2230 4450 40  0000 C CNN
+F 1 "2.2k" V 2157 4451 40  0000 C CNN
+F 2 "~" V 2080 4450 30  0000 C CNN
+F 3 "~" H 2150 4450 30  0000 C CNN
+	1    2150 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D53
+U 1 1 553BF434
+P 2700 4350
+F 0 "D53" H 2700 4450 40  0000 C CNN
+F 1 "DIODESCH" H 2700 4250 40  0000 C CNN
+F 2 "~" H 2700 4350 60  0000 C CNN
+F 3 "~" H 2700 4350 60  0000 C CNN
+	1    2700 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D54
+U 1 1 553BF43A
+P 2700 4600
+F 0 "D54" H 2700 4700 50  0000 C CNN
+F 1 "ZENER" H 2700 4500 40  0000 C CNN
+F 2 "~" H 2700 4600 60  0000 C CNN
+F 3 "~" H 2700 4600 60  0000 C CNN
+	1    2700 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R95
+U 1 1 553BF448
+P 2150 4950
+F 0 "R95" V 2230 4950 40  0000 C CNN
+F 1 "2.2k" V 2157 4951 40  0000 C CNN
+F 2 "~" V 2080 4950 30  0000 C CNN
+F 3 "~" H 2150 4950 30  0000 C CNN
+	1    2150 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D55
+U 1 1 553BF44E
+P 2700 4850
+F 0 "D55" H 2700 4950 40  0000 C CNN
+F 1 "DIODESCH" H 2700 4750 40  0000 C CNN
+F 2 "~" H 2700 4850 60  0000 C CNN
+F 3 "~" H 2700 4850 60  0000 C CNN
+	1    2700 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D56
+U 1 1 553BF454
+P 2700 5100
+F 0 "D56" H 2700 5200 50  0000 C CNN
+F 1 "ZENER" H 2700 5000 40  0000 C CNN
+F 2 "~" H 2700 5100 60  0000 C CNN
+F 3 "~" H 2700 5100 60  0000 C CNN
+	1    2700 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R96
+U 1 1 553BF462
+P 2150 5450
+F 0 "R96" V 2230 5450 40  0000 C CNN
+F 1 "2.2k" V 2157 5451 40  0000 C CNN
+F 2 "~" V 2080 5450 30  0000 C CNN
+F 3 "~" H 2150 5450 30  0000 C CNN
+	1    2150 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D57
+U 1 1 553BF468
+P 2700 5350
+F 0 "D57" H 2700 5450 40  0000 C CNN
+F 1 "DIODESCH" H 2700 5250 40  0000 C CNN
+F 2 "~" H 2700 5350 60  0000 C CNN
+F 3 "~" H 2700 5350 60  0000 C CNN
+	1    2700 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D58
+U 1 1 553BF46E
+P 2700 5600
+F 0 "D58" H 2700 5700 50  0000 C CNN
+F 1 "ZENER" H 2700 5500 40  0000 C CNN
+F 2 "~" H 2700 5600 60  0000 C CNN
+F 3 "~" H 2700 5600 60  0000 C CNN
+	1    2700 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R97
+U 1 1 553BF47C
+P 2150 5950
+F 0 "R97" V 2230 5950 40  0000 C CNN
+F 1 "2.2k" V 2157 5951 40  0000 C CNN
+F 2 "~" V 2080 5950 30  0000 C CNN
+F 3 "~" H 2150 5950 30  0000 C CNN
+	1    2150 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D59
+U 1 1 553BF482
+P 2700 5850
+F 0 "D59" H 2700 5950 40  0000 C CNN
+F 1 "DIODESCH" H 2700 5750 40  0000 C CNN
+F 2 "~" H 2700 5850 60  0000 C CNN
+F 3 "~" H 2700 5850 60  0000 C CNN
+	1    2700 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D60
+U 1 1 553BF488
+P 2700 6100
+F 0 "D60" H 2700 6200 50  0000 C CNN
+F 1 "ZENER" H 2700 6000 40  0000 C CNN
+F 2 "~" H 2700 6100 60  0000 C CNN
+F 3 "~" H 2700 6100 60  0000 C CNN
+	1    2700 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R98
+U 1 1 553BF496
+P 2150 6450
+F 0 "R98" V 2230 6450 40  0000 C CNN
+F 1 "2.2k" V 2157 6451 40  0000 C CNN
+F 2 "~" V 2080 6450 30  0000 C CNN
+F 3 "~" H 2150 6450 30  0000 C CNN
+	1    2150 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D61
+U 1 1 553BF49C
+P 2700 6350
+F 0 "D61" H 2700 6450 40  0000 C CNN
+F 1 "DIODESCH" H 2700 6250 40  0000 C CNN
+F 2 "~" H 2700 6350 60  0000 C CNN
+F 3 "~" H 2700 6350 60  0000 C CNN
+	1    2700 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D62
+U 1 1 553BF4A2
+P 2700 6600
+F 0 "D62" H 2700 6700 50  0000 C CNN
+F 1 "ZENER" H 2700 6500 40  0000 C CNN
+F 2 "~" H 2700 6600 60  0000 C CNN
+F 3 "~" H 2700 6600 60  0000 C CNN
+	1    2700 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R99
+U 1 1 553BF4C8
+P 2150 6950
+F 0 "R99" V 2230 6950 40  0000 C CNN
+F 1 "2.2k" V 2157 6951 40  0000 C CNN
+F 2 "~" V 2080 6950 30  0000 C CNN
+F 3 "~" H 2150 6950 30  0000 C CNN
+	1    2150 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D63
+U 1 1 553BF4CE
+P 2700 6850
+F 0 "D63" H 2700 6950 40  0000 C CNN
+F 1 "DIODESCH" H 2700 6750 40  0000 C CNN
+F 2 "~" H 2700 6850 60  0000 C CNN
+F 3 "~" H 2700 6850 60  0000 C CNN
+	1    2700 6850
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D64
+U 1 1 553BF4D4
+P 2700 7100
+F 0 "D64" H 2700 7200 50  0000 C CNN
+F 1 "ZENER" H 2700 7000 40  0000 C CNN
+F 2 "~" H 2700 7100 60  0000 C CNN
+F 3 "~" H 2700 7100 60  0000 C CNN
+	1    2700 7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:R R100
+U 1 1 553BF4E8
+P 2150 7450
+F 0 "R100" V 2230 7450 40  0000 C CNN
+F 1 "2.2k" V 2157 7451 40  0000 C CNN
+F 2 "~" V 2080 7450 30  0000 C CNN
+F 3 "~" H 2150 7450 30  0000 C CNN
+	1    2150 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:DIODESCH D65
+U 1 1 553BF4EE
+P 2700 7350
+F 0 "D65" H 2700 7450 40  0000 C CNN
+F 1 "DIODESCH" H 2700 7250 40  0000 C CNN
+F 2 "~" H 2700 7350 60  0000 C CNN
+F 3 "~" H 2700 7350 60  0000 C CNN
+	1    2700 7350
+	-1   0    0    1   
+$EndComp
+$Comp
+L recepteur-25khz-1-rescue:ZENER D66
+U 1 1 553BF4F4
+P 2700 7600
+F 0 "D66" H 2700 7700 50  0000 C CNN
+F 1 "ZENER" H 2700 7500 40  0000 C CNN
+F 2 "~" H 2700 7600 60  0000 C CNN
+F 3 "~" H 2700 7600 60  0000 C CNN
+	1    2700 7600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1800 950  1900 950 
+Wire Wire Line
+	2400 850  2400 950 
+Wire Wire Line
+	2400 850  2500 850 
+Wire Wire Line
+	2400 1100 2500 1100
+Connection ~ 2400 950 
+Connection ~ 2900 850 
+Wire Wire Line
+	1800 2950 1900 2950
+Wire Wire Line
+	2400 2850 2400 2950
+Wire Wire Line
+	2400 2850 2500 2850
+Wire Wire Line
+	2400 3100 2500 3100
+Connection ~ 2400 2950
+Wire Wire Line
+	2900 850  2900 1100
+Wire Wire Line
+	1800 3450 1900 3450
+Wire Wire Line
+	2400 3350 2400 3450
+Wire Wire Line
+	2400 3350 2500 3350
+Wire Wire Line
+	2400 3600 2500 3600
+Connection ~ 2400 3450
+Wire Wire Line
+	1800 3950 1900 3950
+Wire Wire Line
+	2400 3850 2400 3950
+Wire Wire Line
+	2400 3850 2500 3850
+Wire Wire Line
+	2400 4100 2500 4100
+Connection ~ 2400 3950
+Wire Wire Line
+	1800 4450 1900 4450
+Wire Wire Line
+	2400 4350 2400 4450
+Wire Wire Line
+	2400 4350 2500 4350
+Wire Wire Line
+	2400 4600 2500 4600
+Connection ~ 2400 4450
+Wire Wire Line
+	1800 4950 1900 4950
+Wire Wire Line
+	2400 4850 2400 4950
+Wire Wire Line
+	2400 4850 2500 4850
+Wire Wire Line
+	2400 5100 2500 5100
+Connection ~ 2400 4950
+Wire Wire Line
+	1800 5450 1900 5450
+Wire Wire Line
+	2400 5350 2400 5450
+Wire Wire Line
+	2400 5350 2500 5350
+Wire Wire Line
+	2400 5600 2500 5600
+Connection ~ 2400 5450
+Wire Wire Line
+	1800 5950 1900 5950
+Wire Wire Line
+	2400 5850 2400 5950
+Wire Wire Line
+	2400 5850 2500 5850
+Wire Wire Line
+	2400 6100 2500 6100
+Connection ~ 2400 5950
+Wire Wire Line
+	1800 6450 1900 6450
+Wire Wire Line
+	2400 6350 2400 6450
+Wire Wire Line
+	2400 6350 2500 6350
+Wire Wire Line
+	2400 6600 2500 6600
+Connection ~ 2400 6450
+Wire Wire Line
+	1800 6950 1900 6950
+Wire Wire Line
+	2400 6850 2400 6950
+Wire Wire Line
+	2400 6850 2500 6850
+Wire Wire Line
+	2400 7100 2500 7100
+Connection ~ 2400 6950
+Wire Wire Line
+	1800 7450 1900 7450
+Wire Wire Line
+	2400 7350 2400 7450
+Wire Wire Line
+	2400 7350 2500 7350
+Wire Wire Line
+	2400 7600 2500 7600
+Connection ~ 2400 7450
+Wire Wire Line
+	1800 2450 1900 2450
+Wire Wire Line
+	2400 2350 2400 2450
+Wire Wire Line
+	2400 2350 2500 2350
+Wire Wire Line
+	2400 2600 2500 2600
+Connection ~ 2400 2450
+Wire Wire Line
+	2500 1350 2400 1350
+Wire Wire Line
+	2400 1350 2400 1450
+Wire Wire Line
+	2400 1600 2500 1600
+Connection ~ 2400 1450
+Wire Wire Line
+	1900 1450 1800 1450
+Wire Wire Line
+	1800 1950 1900 1950
+Wire Wire Line
+	2400 1850 2400 1950
+Wire Wire Line
+	2400 1850 2500 1850
+Wire Wire Line
+	2400 2100 2500 2100
+Connection ~ 2400 1950
+Wire Wire Line
+	2900 850  3400 850 
+Wire Wire Line
+	3400 850  3400 800 
+Connection ~ 2900 1350
+Connection ~ 2900 1100
+Connection ~ 2900 1850
+Connection ~ 2900 1600
+Connection ~ 2900 2350
+Connection ~ 2900 2100
+Connection ~ 2900 2850
+Connection ~ 2900 2600
+Connection ~ 2900 3350
+Connection ~ 2900 3100
+Connection ~ 2900 3850
+Connection ~ 2900 3600
+Connection ~ 2900 4350
+Connection ~ 2900 4100
+Connection ~ 2900 4850
+Connection ~ 2900 4600
+Connection ~ 2900 5350
+Connection ~ 2900 5100
+Connection ~ 2900 5850
+Connection ~ 2900 5600
+Connection ~ 2900 6350
+Connection ~ 2900 6100
+Connection ~ 2900 6850
+Connection ~ 2900 6600
+Connection ~ 2900 7350
+Connection ~ 2900 7100
+Wire Wire Line
+	3800 3550 3800 1500
+Wire Wire Line
+	5950 850  5950 2750
+Connection ~ 3400 850 
+Wire Wire Line
+	2400 950  3750 950 
+Wire Wire Line
+	3750 950  3750 3650
+Wire Wire Line
+	2400 1450 3700 1450
+Wire Wire Line
+	3700 1450 3700 3750
+Wire Wire Line
+	2400 1950 3650 1950
+Wire Wire Line
+	3650 1950 3650 3850
+Wire Wire Line
+	2400 2450 3600 2450
+Wire Wire Line
+	3600 2450 3600 3950
+Wire Wire Line
+	2400 2950 3550 2950
+Wire Wire Line
+	3550 2950 3550 4050
+Wire Wire Line
+	2400 3450 3500 3450
+Wire Wire Line
+	3500 3450 3500 4150
+Wire Wire Line
+	2400 3950 3450 3950
+Wire Wire Line
+	3450 3950 3450 4250
+Wire Wire Line
+	2400 5450 3100 5450
+Wire Wire Line
+	2400 5950 3150 5950
+Wire Wire Line
+	2400 6450 3200 6450
+Wire Wire Line
+	2400 6950 3250 6950
+Wire Wire Line
+	2400 7500 3300 7500
+Connection ~ 2400 7500
+Wire Wire Line
+	3100 5450 3100 5050
+Wire Wire Line
+	3150 5950 3150 5150
+Wire Wire Line
+	3200 6450 3200 5250
+Wire Wire Line
+	3250 6950 3250 5350
+Wire Wire Line
+	3300 7500 3300 5450
+$Comp
+L recepteur-25khz-1-rescue:CONN_3 K1
+U 1 1 553E3116
+P 4250 6200
+F 0 "K1" V 4200 6200 50  0000 C CNN
+F 1 "CONN_3" V 4300 6200 40  0000 C CNN
+F 2 "" H 4250 6200 60  0000 C CNN
+F 3 "" H 4250 6200 60  0000 C CNN
+	1    4250 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4850 3100 4450
+Wire Wire Line
+	3100 4450 2400 4450
+Wire Wire Line
+	3600 5550 3600 6300
+Wire Wire Line
+	3600 6300 3900 6300
+Wire Wire Line
+	3900 6200 3650 6200
+Wire Wire Line
+	3650 6200 3650 5650
+Wire Wire Line
+	3700 5750 3700 6100
+Wire Wire Line
+	3700 6100 3900 6100
+$Comp
+L recepteur-25khz-1-rescue:CONN_4 P22
+U 1 1 553E3D4E
+P 3400 4500
+F 0 "P22" V 3350 4500 50  0000 C CNN
+F 1 "CONN_4" V 3450 4500 50  0000 C CNN
+F 2 "" H 3400 4500 60  0000 C CNN
+F 3 "" H 3400 4500 60  0000 C CNN
+	1    3400 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 950  2400 1100
+Wire Wire Line
+	2400 2950 2400 3100
+Wire Wire Line
+	2400 3450 2400 3600
+Wire Wire Line
+	2400 3950 2400 4100
+Wire Wire Line
+	2400 4450 2400 4600
+Wire Wire Line
+	2400 4950 2400 5100
+Wire Wire Line
+	2400 5450 2400 5600
+Wire Wire Line
+	2400 5950 2400 6100
+Wire Wire Line
+	2400 6450 2400 6600
+Wire Wire Line
+	2400 6950 2400 7100
+Wire Wire Line
+	2400 7450 2400 7500
+Wire Wire Line
+	2400 2450 2400 2600
+Wire Wire Line
+	2400 1450 2400 1600
+Wire Wire Line
+	2400 1950 2400 2100
+Wire Wire Line
+	2900 1350 2900 1600
+Wire Wire Line
+	2900 1100 2900 1350
+Wire Wire Line
+	2900 1850 2900 2100
+Wire Wire Line
+	2900 1600 2900 1850
+Wire Wire Line
+	2900 2350 2900 2600
+Wire Wire Line
+	2900 2100 2900 2350
+Wire Wire Line
+	2900 2850 2900 3100
+Wire Wire Line
+	2900 2600 2900 2850
+Wire Wire Line
+	2900 3350 2900 3600
+Wire Wire Line
+	2900 3100 2900 3350
+Wire Wire Line
+	2900 3850 2900 4100
+Wire Wire Line
+	2900 3600 2900 3850
+Wire Wire Line
+	2900 4350 2900 4600
+Wire Wire Line
+	2900 4100 2900 4350
+Wire Wire Line
+	2900 4850 2900 5100
+Wire Wire Line
+	2900 4600 2900 4850
+Wire Wire Line
+	2900 5350 2900 5600
+Wire Wire Line
+	2900 5100 2900 5350
+Wire Wire Line
+	2900 5850 2900 6100
+Wire Wire Line
+	2900 5600 2900 5850
+Wire Wire Line
+	2900 6350 2900 6600
+Wire Wire Line
+	2900 6100 2900 6350
+Wire Wire Line
+	2900 6850 2900 7100
+Wire Wire Line
+	2900 6600 2900 6850
+Wire Wire Line
+	2900 7350 2900 7600
+Wire Wire Line
+	2900 7100 2900 7350
+Wire Wire Line
+	3400 850  5950 850 
+Wire Wire Line
+	2400 7500 2400 7600
+$Comp
+L components:RFBEE RF1
+U 1 1 647F8F72
+P 4850 2100
+F 0 "RF1" H 4850 2250 50  0000 C CNN
+F 1 "RFBEE" H 4850 1800 50  0000 C CNN
+F 2 "footprints:zigbee" H 4850 2100 50  0001 C CNN
+F 3 "" H 4850 2100 50  0001 C CNN
+	1    4850 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1500 3950 1500
+Wire Wire Line
+	5750 1450 6050 1450
+Wire Wire Line
+	6050 800  6050 1450
+Wire Wire Line
+	5750 2750 5950 2750
+Connection ~ 5950 2750
+Wire Wire Line
+	5950 2750 5950 5750
+$Comp
+L components:TEENSY IC8
+U 1 1 64814D6F
+P 4850 4650
+F 0 "IC8" H 4850 4850 50  0000 C CNN
+F 1 "TEENSY" H 4850 4400 50  0000 C CNN
+F 2 "footprints:Teensy" H 4850 4650 50  0001 C CNN
+F 3 "" H 4850 4650 50  0001 C CNN
+	1    4850 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3450 6350 3450
+Wire Wire Line
+	6350 3450 6350 800 
+Wire Wire Line
+	5750 5750 5950 5750
+Wire Wire Line
+	3700 5750 3950 5750
+Wire Wire Line
+	3650 5650 3950 5650
+Wire Wire Line
+	3600 5550 3950 5550
+Wire Wire Line
+	3300 5450 3950 5450
+Wire Wire Line
+	3250 5350 3950 5350
+Wire Wire Line
+	3200 5250 3950 5250
+Wire Wire Line
+	3150 5150 3950 5150
+Wire Wire Line
+	3100 5050 3950 5050
+Wire Wire Line
+	2400 4950 3950 4950
+Wire Wire Line
+	3100 4850 3950 4850
+Wire Wire Line
+	3750 4650 3950 4650
+Wire Wire Line
+	3750 4550 3950 4550
+Wire Wire Line
+	3750 4450 3950 4450
+Wire Wire Line
+	3750 4350 3950 4350
+Wire Wire Line
+	3450 4250 3950 4250
+Wire Wire Line
+	3500 4150 3950 4150
+Wire Wire Line
+	3550 4050 3950 4050
+Wire Wire Line
+	3600 3950 3950 3950
+Wire Wire Line
+	3650 3850 3950 3850
+Wire Wire Line
+	3700 3750 3950 3750
+Wire Wire Line
+	3750 3650 3950 3650
+Wire Wire Line
+	3800 3550 3950 3550
+$EndSCHEMATC

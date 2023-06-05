@@ -1,0 +1,32 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 17/03/2015 23:06:37
+#Cmp ( ordre = Référence )
+| IC1        ATTINY45-P  
+| P1         CONN_2      
+| Q1         2N3904      
+| Q2         2N3906      
+| Q3         2N3906      
+| Q4         2N3904      
+| R1         22k         
+| R2         22k         
+| R3         1k          
+| R4         22k         
+| R5         22k         
+| R6         1k          
+#End Cmp
+
+#Cmp ( ordre = Valeur )
+| ATTINY45-P   IC1       
+| CONN_2       P1        
+| 2N3904       Q1        
+| 2N3906       Q2        
+| 2N3906       Q3        
+| 2N3904       Q4        
+| 1k           R3        
+| 1k           R6        
+| 22k          R1        
+| 22k          R2        
+| 22k          R4        
+| 22k          R5        
+#End Cmp
+
+#End List

@@ -1,0 +1,670 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 8
+Title ""
+Date "1 may 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L recepteur-32khz-rescue:ULTRASON US3
+U 1 1 55196B50
+P 1600 1700
+F 0 "US3" H 1600 1750 60  0000 C CNN
+F 1 "ULTRASON" H 1600 1900 60  0000 C CNN
+F 2 "" H 1600 1700 60  0000 C CNN
+F 3 "" H 1600 1750 60  0000 C CNN
+F 4 "32.8 KHz" H 1600 1650 60  0000 C CNN "Frequency"
+	1    1600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L recepteur-32khz-rescue:R R11
+U 1 1 55196B56
+P 2350 1700
+F 0 "R11" V 2430 1700 40  0000 C CNN
+F 1 "1k" V 2357 1701 40  0000 C CNN
+F 2 "~" V 2280 1700 30  0000 C CNN
+F 3 "~" H 2350 1700 30  0000 C CNN
+	1    2350 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:C C23
+U 1 1 55196B5C
+P 2900 1700
+F 0 "C23" H 2900 1800 40  0000 L CNN
+F 1 "6.8n" H 2906 1615 40  0000 L CNN
+F 2 "~" H 2938 1550 30  0000 C CNN
+F 3 "~" H 2900 1700 60  0000 C CNN
+	1    2900 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:TL074 U2
+U 3 1 55196B62
+P 3700 1800
+F 0 "U2" H 3750 2000 60  0000 C CNN
+F 1 "TL074" H 3850 1600 50  0000 C CNN
+F 2 "" H 3700 1800 60  0000 C CNN
+F 3 "" H 3700 1800 60  0000 C CNN
+	3    3700 1800
+	1    0    0    1   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:C C24
+U 1 1 55196B68
+P 3600 1100
+F 0 "C24" H 3600 1200 40  0000 L CNN
+F 1 "220p" H 3606 1015 40  0000 L CNN
+F 2 "~" H 3638 950 30  0000 C CNN
+F 3 "~" H 3600 1100 60  0000 C CNN
+	1    3600 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:R R25
+U 1 1 55196B6E
+P 3600 850
+F 0 "R25" V 3680 850 40  0000 C CNN
+F 1 "22k" V 3607 851 40  0000 C CNN
+F 2 "~" V 3530 850 30  0000 C CNN
+F 3 "~" H 3600 850 30  0000 C CNN
+	1    3600 850 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:R R27
+U 1 1 55196B74
+P 4600 1800
+F 0 "R27" V 4680 1800 40  0000 C CNN
+F 1 "1k" V 4607 1801 40  0000 C CNN
+F 2 "~" V 4530 1800 30  0000 C CNN
+F 3 "~" H 4600 1800 30  0000 C CNN
+	1    4600 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:C C27
+U 1 1 55196B7A
+P 5150 1800
+F 0 "C27" H 5150 1900 40  0000 L CNN
+F 1 "6.8n" H 5156 1715 40  0000 L CNN
+F 2 "~" H 5188 1650 30  0000 C CNN
+F 3 "~" H 5150 1800 60  0000 C CNN
+	1    5150 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:TL074 U2
+U 4 1 55196B80
+P 5950 1900
+F 0 "U2" H 6000 2100 60  0000 C CNN
+F 1 "TL074" H 6100 1700 50  0000 C CNN
+F 2 "" H 5950 1900 60  0000 C CNN
+F 3 "" H 5950 1900 60  0000 C CNN
+	4    5950 1900
+	1    0    0    1   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:C C30
+U 1 1 55196B86
+P 5850 1200
+F 0 "C30" H 5850 1300 40  0000 L CNN
+F 1 "220p" H 5856 1115 40  0000 L CNN
+F 2 "~" H 5888 1050 30  0000 C CNN
+F 3 "~" H 5850 1200 60  0000 C CNN
+	1    5850 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:R R30
+U 1 1 55196B8C
+P 5850 950
+F 0 "R30" V 5930 950 40  0000 C CNN
+F 1 "22k" V 5857 951 40  0000 C CNN
+F 2 "~" V 5780 950 30  0000 C CNN
+F 3 "~" H 5850 950 30  0000 C CNN
+	1    5850 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:TL074 U2
+U 1 1 55196B92
+P 3700 3200
+F 0 "U2" H 3750 3400 60  0000 C CNN
+F 1 "TL074" H 3850 3000 50  0000 C CNN
+F 2 "" H 3700 3200 60  0000 C CNN
+F 3 "" H 3700 3200 60  0000 C CNN
+	1    3700 3200
+	1    0    0    1   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:DIODESCH D9
+U 1 1 55196B98
+P 4500 3200
+F 0 "D9" H 4500 3300 40  0000 C CNN
+F 1 "DIODESCH" H 4500 3100 40  0000 C CNN
+F 2 "~" H 4500 3200 60  0000 C CNN
+F 3 "~" H 4500 3200 60  0000 C CNN
+	1    4500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L recepteur-32khz-rescue:C C25
+U 1 1 55196B9E
+P 4950 3500
+F 0 "C25" H 4950 3600 40  0000 L CNN
+F 1 "47n" H 4956 3415 40  0000 L CNN
+F 2 "~" H 4988 3350 30  0000 C CNN
+F 3 "~" H 4950 3500 60  0000 C CNN
+	1    4950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L recepteur-32khz-rescue:R R28
+U 1 1 55196BA4
+P 5200 3500
+F 0 "R28" V 5280 3500 40  0000 C CNN
+F 1 "47k" V 5207 3501 40  0000 C CNN
+F 2 "~" V 5130 3500 30  0000 C CNN
+F 3 "~" H 5200 3500 30  0000 C CNN
+	1    5200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L recepteur-32khz-rescue:C C28
+U 1 1 55196BAA
+P 5500 3200
+F 0 "C28" H 5500 3300 40  0000 L CNN
+F 1 "100n" H 5506 3115 40  0000 L CNN
+F 2 "~" H 5538 3050 30  0000 C CNN
+F 3 "~" H 5500 3200 60  0000 C CNN
+	1    5500 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:R R31
+U 1 1 55196BB0
+P 6050 3200
+F 0 "R31" V 6130 3200 40  0000 C CNN
+F 1 "47k" V 6057 3201 40  0000 C CNN
+F 2 "~" V 5980 3200 30  0000 C CNN
+F 3 "~" H 6050 3200 30  0000 C CNN
+	1    6050 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:C C31
+U 1 1 55196BB6
+P 6400 3500
+F 0 "C31" H 6400 3600 40  0000 L CNN
+F 1 "1n" H 6406 3415 40  0000 L CNN
+F 2 "~" H 6438 3350 30  0000 C CNN
+F 3 "~" H 6400 3500 60  0000 C CNN
+	1    6400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L recepteur-32khz-rescue:TL074 U2
+U 2 1 55196BBC
+P 3700 4650
+F 0 "U2" H 3750 4850 60  0000 C CNN
+F 1 "TL074" H 3850 4450 50  0000 C CNN
+F 2 "" H 3700 4650 60  0000 C CNN
+F 3 "" H 3700 4650 60  0000 C CNN
+	2    3700 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:R R12
+U 1 1 55196BC2
+P 2850 4550
+F 0 "R12" V 2930 4550 40  0000 C CNN
+F 1 "1k" V 2857 4551 40  0000 C CNN
+F 2 "~" V 2780 4550 30  0000 C CNN
+F 3 "~" H 2850 4550 30  0000 C CNN
+	1    2850 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:R R26
+U 1 1 55196BC8
+P 3600 4000
+F 0 "R26" V 3680 4000 40  0000 C CNN
+F 1 "6.8k" V 3607 4001 40  0000 C CNN
+F 2 "~" V 3530 4000 30  0000 C CNN
+F 3 "~" H 3600 4000 30  0000 C CNN
+	1    3600 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:DIODESCH D10
+U 1 1 55196BCE
+P 4500 4650
+F 0 "D10" H 4500 4750 40  0000 C CNN
+F 1 "DIODESCH" H 4500 4550 40  0000 C CNN
+F 2 "~" H 4500 4650 60  0000 C CNN
+F 3 "~" H 4500 4650 60  0000 C CNN
+	1    4500 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L recepteur-32khz-rescue:C C26
+U 1 1 55196BD4
+P 4950 4950
+F 0 "C26" H 4950 5050 40  0000 L CNN
+F 1 "47n" H 4956 4865 40  0000 L CNN
+F 2 "~" H 4988 4800 30  0000 C CNN
+F 3 "~" H 4950 4950 60  0000 C CNN
+	1    4950 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L recepteur-32khz-rescue:R R29
+U 1 1 55196BDA
+P 5200 4950
+F 0 "R29" V 5280 4950 40  0000 C CNN
+F 1 "47k" V 5207 4951 40  0000 C CNN
+F 2 "~" V 5130 4950 30  0000 C CNN
+F 3 "~" H 5200 4950 30  0000 C CNN
+	1    5200 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L recepteur-32khz-rescue:C C29
+U 1 1 55196BE0
+P 5500 4650
+F 0 "C29" H 5500 4750 40  0000 L CNN
+F 1 "100n" H 5506 4565 40  0000 L CNN
+F 2 "~" H 5538 4500 30  0000 C CNN
+F 3 "~" H 5500 4650 60  0000 C CNN
+	1    5500 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:R R32
+U 1 1 55196BE6
+P 6050 4650
+F 0 "R32" V 6130 4650 40  0000 C CNN
+F 1 "47k" V 6057 4651 40  0000 C CNN
+F 2 "~" V 5980 4650 30  0000 C CNN
+F 3 "~" H 6050 4650 30  0000 C CNN
+	1    6050 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:C C32
+U 1 1 55196BEC
+P 6400 4950
+F 0 "C32" H 6400 5050 40  0000 L CNN
+F 1 "2.2n" H 6406 4865 40  0000 L CNN
+F 2 "~" H 6438 4800 30  0000 C CNN
+F 3 "~" H 6400 4950 60  0000 C CNN
+	1    6400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L recepteur-32khz-rescue:ATTINY45-P IC3
+U 1 1 55196BF2
+P 9150 2000
+AR Path="/55196BF2" Ref="IC3"  Part="1" 
+AR Path="/55195A3B/55196BF2" Ref="IC3"  Part="1" 
+F 0 "IC3" H 8100 2400 60  0000 C CNN
+F 1 "ATTINY45-P" H 10000 1600 60  0000 C CNN
+F 2 "DIP8" H 8100 1600 60  0001 C CNN
+F 3 "" H 9150 2000 60  0000 C CNN
+	1    9150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L recepteur-32khz-rescue:C C33
+U 1 1 55196BF8
+P 10550 2000
+F 0 "C33" H 10550 2100 40  0000 L CNN
+F 1 "100n" H 10556 1915 40  0000 L CNN
+F 2 "~" H 10588 1850 30  0000 C CNN
+F 3 "~" H 10550 2000 60  0000 C CNN
+	1    10550 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1700 2100 1700
+Wire Wire Line
+	2600 1700 2700 1700
+Wire Wire Line
+	3100 1700 3150 1700
+Connection ~ 3150 1700
+Wire Wire Line
+	4200 1800 4250 1800
+Wire Wire Line
+	3600 1350 3600 1400
+Wire Wire Line
+	3600 2250 3600 2200
+Wire Wire Line
+	4250 1100 3800 1100
+Connection ~ 4250 1100
+Wire Wire Line
+	3400 1100 3150 1100
+Connection ~ 3150 1100
+Wire Wire Line
+	4250 850  4250 1100
+Wire Wire Line
+	3850 850  4250 850 
+Wire Wire Line
+	3350 850  3150 850 
+Wire Wire Line
+	3150 850  3150 1100
+Wire Wire Line
+	4850 1800 4950 1800
+Wire Wire Line
+	5350 1800 5400 1800
+Connection ~ 5400 1800
+Wire Wire Line
+	6500 1900 6450 1900
+Wire Wire Line
+	5450 2000 5350 2000
+Wire Wire Line
+	5850 1450 5850 1500
+Wire Wire Line
+	5850 2350 5850 2300
+Wire Wire Line
+	6500 1200 6050 1200
+Connection ~ 6500 1200
+Wire Wire Line
+	5650 1200 5400 1200
+Connection ~ 5400 1200
+Wire Wire Line
+	6500 950  6500 1200
+Wire Wire Line
+	6100 950  6500 950 
+Wire Wire Line
+	5600 950  5400 950 
+Wire Wire Line
+	5400 950  5400 1200
+Connection ~ 4250 1800
+Wire Wire Line
+	3600 2750 3600 2800
+Wire Wire Line
+	3600 3650 3600 3600
+Wire Wire Line
+	4200 3200 4300 3200
+Wire Wire Line
+	4700 3200 4750 3200
+Wire Wire Line
+	4750 3200 4750 2550
+Wire Wire Line
+	4750 2550 3200 2550
+Wire Wire Line
+	3200 2550 3200 3100
+Wire Wire Line
+	6500 2450 3100 2450
+Wire Wire Line
+	3100 2450 3100 3300
+Wire Wire Line
+	2600 3300 3100 3300
+Connection ~ 6500 1900
+Connection ~ 4750 3200
+Wire Wire Line
+	4950 3300 4950 3200
+Connection ~ 4950 3200
+Wire Wire Line
+	5200 3250 5200 3200
+Connection ~ 5200 3200
+Wire Wire Line
+	5700 3200 5750 3200
+Wire Wire Line
+	6400 3300 6400 3200
+Wire Wire Line
+	6300 3200 6400 3200
+Wire Wire Line
+	4950 3700 4950 3800
+Wire Wire Line
+	4950 3800 5200 3800
+Wire Wire Line
+	5200 3800 5200 3750
+Wire Wire Line
+	6400 3800 6400 3700
+Connection ~ 5200 3800
+Wire Wire Line
+	5600 3900 5600 3800
+Connection ~ 5600 3800
+Wire Wire Line
+	3600 4200 3600 4250
+Wire Wire Line
+	3600 5100 3600 5050
+Wire Wire Line
+	4200 4650 4250 4650
+Wire Wire Line
+	4250 4650 4250 4000
+Wire Wire Line
+	4250 4000 3850 4000
+Wire Wire Line
+	3350 4000 3150 4000
+Wire Wire Line
+	3150 4000 3150 4550
+Wire Wire Line
+	3100 4550 3150 4550
+Connection ~ 3150 4550
+Wire Wire Line
+	2600 3300 2600 4550
+Connection ~ 3100 3300
+Connection ~ 4250 4650
+Wire Wire Line
+	3100 4750 3200 4750
+Wire Wire Line
+	4950 4750 4950 4650
+Connection ~ 4950 4650
+Wire Wire Line
+	5200 4650 5200 4700
+Connection ~ 5200 4650
+Wire Wire Line
+	5700 4650 5750 4650
+Wire Wire Line
+	6400 4750 6400 4650
+Wire Wire Line
+	6300 4650 6400 4650
+Wire Wire Line
+	4950 5150 4950 5250
+Wire Wire Line
+	4950 5250 5200 5250
+Wire Wire Line
+	5200 5250 5200 5200
+Wire Wire Line
+	6400 5250 6400 5150
+Connection ~ 5200 5250
+Wire Wire Line
+	5600 5350 5600 5250
+Connection ~ 5600 5250
+Wire Wire Line
+	4700 4650 4950 4650
+Wire Wire Line
+	10500 1750 10550 1750
+Wire Wire Line
+	10500 2250 10550 2250
+Wire Wire Line
+	7150 3200 7150 2150
+Wire Wire Line
+	7150 2150 7800 2150
+Connection ~ 6400 3200
+Wire Wire Line
+	7350 4650 7350 2050
+Wire Wire Line
+	7350 2050 7800 2050
+Connection ~ 6400 4650
+Wire Wire Line
+	10550 1800 10550 1750
+Connection ~ 10550 1750
+Wire Wire Line
+	10550 2200 10550 2250
+Connection ~ 10550 2250
+$Comp
+L recepteur-32khz-rescue:DIODESCH D11
+U 1 1 55196C5F
+P 5750 3500
+F 0 "D11" H 5750 3600 40  0000 C CNN
+F 1 "DIODESCH" H 5750 3400 40  0000 C CNN
+F 2 "~" H 5750 3500 60  0000 C CNN
+F 3 "~" H 5750 3500 60  0000 C CNN
+	1    5750 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 3200 5750 3300
+Connection ~ 5750 3200
+Wire Wire Line
+	5750 3700 5750 3800
+Connection ~ 5750 3800
+$Comp
+L recepteur-32khz-rescue:DIODESCH D12
+U 1 1 55196C69
+P 5750 4950
+F 0 "D12" H 5750 5050 40  0000 C CNN
+F 1 "DIODESCH" H 5750 4850 40  0000 C CNN
+F 2 "~" H 5750 4950 60  0000 C CNN
+F 3 "~" H 5750 4950 60  0000 C CNN
+	1    5750 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 4650 5750 4750
+Connection ~ 5750 4650
+Wire Wire Line
+	5750 5150 5750 5250
+Connection ~ 5750 5250
+Text HLabel 1100 1700 0    60   Input ~ 0
+6V
+Wire Wire Line
+	1100 1700 1200 1700
+Text HLabel 3100 1900 0    60   Input ~ 0
+6V
+Text HLabel 5350 2000 0    60   Input ~ 0
+6V
+Text HLabel 3100 4750 0    60   Input ~ 0
+6V
+Wire Wire Line
+	3100 1900 3200 1900
+Text HLabel 5600 5350 3    60   Input ~ 0
+GND
+Text HLabel 3600 4200 1    60   Input ~ 0
+GND
+Text HLabel 3600 2750 1    60   Input ~ 0
+GND
+Text HLabel 5600 3900 3    60   Input ~ 0
+GND
+Text HLabel 3600 1350 1    60   Input ~ 0
+GND
+Text HLabel 5850 1450 1    60   Input ~ 0
+GND
+Text HLabel 10600 2250 2    60   Input ~ 0
+GND
+Text HLabel 10600 1750 2    60   Input ~ 0
+5V
+Text HLabel 3600 2250 3    60   Input ~ 0
+12V
+Text HLabel 5850 2350 3    60   Input ~ 0
+12V
+Text HLabel 3600 3650 3    60   Input ~ 0
+12V
+Text HLabel 3600 5100 3    60   Input ~ 0
+12V
+Text HLabel 7700 1750 0    60   Input ~ 0
+Trigger
+Wire Wire Line
+	7700 1750 7800 1750
+$Comp
+L recepteur-32khz-rescue:R R79
+U 1 1 5525AD11
+P 7450 1850
+F 0 "R79" V 7530 1850 40  0000 C CNN
+F 1 "10k" V 7457 1851 40  0000 C CNN
+F 2 "~" V 7380 1850 30  0000 C CNN
+F 3 "~" H 7450 1850 30  0000 C CNN
+	1    7450 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L recepteur-32khz-rescue:LED D31
+U 1 1 5525AD17
+P 6900 1850
+F 0 "D31" H 6900 1950 50  0000 C CNN
+F 1 "LED" H 6900 1750 50  0000 C CNN
+F 2 "~" H 6900 1850 60  0000 C CNN
+F 3 "~" H 6900 1850 60  0000 C CNN
+	1    6900 1850
+	-1   0    0    1   
+$EndComp
+Text HLabel 6650 1900 3    60   Input ~ 0
+GND
+Wire Wire Line
+	7800 1850 7700 1850
+Wire Wire Line
+	7200 1850 7100 1850
+Wire Wire Line
+	6700 1850 6650 1850
+Wire Wire Line
+	6650 1850 6650 1900
+Wire Wire Line
+	3150 1700 3200 1700
+Wire Wire Line
+	4250 1100 4250 1800
+Wire Wire Line
+	3150 1100 3150 1700
+Wire Wire Line
+	5400 1800 5450 1800
+Wire Wire Line
+	6500 1200 6500 1900
+Wire Wire Line
+	5400 1200 5400 1800
+Wire Wire Line
+	4250 1800 4350 1800
+Wire Wire Line
+	6500 1900 6500 2450
+Wire Wire Line
+	4750 3200 4950 3200
+Wire Wire Line
+	4950 3200 5200 3200
+Wire Wire Line
+	5200 3200 5300 3200
+Wire Wire Line
+	5200 3800 5600 3800
+Wire Wire Line
+	5600 3800 5750 3800
+Wire Wire Line
+	3150 4550 3200 4550
+Wire Wire Line
+	3100 3300 3200 3300
+Wire Wire Line
+	4250 4650 4300 4650
+Wire Wire Line
+	4950 4650 5200 4650
+Wire Wire Line
+	5200 4650 5300 4650
+Wire Wire Line
+	5200 5250 5600 5250
+Wire Wire Line
+	5600 5250 5750 5250
+Wire Wire Line
+	6400 3200 7150 3200
+Wire Wire Line
+	6400 4650 7350 4650
+Wire Wire Line
+	10550 1750 10600 1750
+Wire Wire Line
+	10550 2250 10600 2250
+Wire Wire Line
+	5750 3200 5800 3200
+Wire Wire Line
+	5750 3800 6400 3800
+Wire Wire Line
+	5750 4650 5800 4650
+Wire Wire Line
+	5750 5250 6400 5250
+$EndSCHEMATC

@@ -1,0 +1,4 @@
+elec/**/*.back
+elec/**/*.kicad_pcb-bak
+elec/**/*.sch-bak
+elec/**/*.bak
