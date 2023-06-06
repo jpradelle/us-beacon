@@ -5,6 +5,9 @@ import com.opensabot.multilateration.ThreePointsLateration;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * /!\ Not working algorithm ?
+ */
 public class IterativeTreePointsLateration implements ThreePointsLateration {
 
 	private final double x1;
