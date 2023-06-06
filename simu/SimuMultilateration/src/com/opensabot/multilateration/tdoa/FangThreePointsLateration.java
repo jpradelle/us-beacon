@@ -58,7 +58,7 @@ public class FangThreePointsLateration implements ThreePointsLateration {
 		final double f = (r21 * r21 / 4) * i * i - h * h;
 		
 		double delta = e * e - 4 * d * f;
-		// double precision sucks
+		// avoid double precision issue
 		if (delta > -0.00001 && delta <= 0)
 			delta = 0;
 		if (delta < 0)

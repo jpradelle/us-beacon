@@ -5,14 +5,13 @@ import com.opensabot.multilateration.signature.Errors;
 import com.opensabot.multilateration.image.ImageUtils;
 import com.opensabot.multilateration.swing.ImagePanel;
 import com.opensabot.multilateration.tdoa.FangThreePointsLateration;
-import com.opensabot.multilateration.tdoa.IterativeTreePointsLateration;
+import com.opensabot.multilateration.tdoa.IterativeThreePointsLateration;
 import com.opensabot.multilateration.toa.CircleThreePointsToaLateration;
 import com.opensabot.multilateration.toa.TulipThreePointsToaLateration;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import javax.swing.JFrame;
-import javax.swing.WindowConstants;
+import javax.swing.*;
 
 /**
  *
@@ -36,17 +35,16 @@ public class ImageSimu {
 	 */
 	public static void main(final String[] args) {
 		final JFrame frame = new JFrame();
-		frame.setLayout(new FlowLayout());
+		final JPanel framePanel = new JPanel();
+		framePanel.setLayout(new BoxLayout(framePanel, BoxLayout.X_AXIS));
+		frame.add(framePanel);
 
-		final ImagePanel avgPanel = new ImagePanel();
-		avgPanel.setPreferredSize(new Dimension(WIDTH + 50, HEIGHT));
-		frame.add(avgPanel);
-		final ImagePanel maxPanel = new ImagePanel();
-		maxPanel.setPreferredSize(new Dimension(WIDTH + 50, HEIGHT));
-		frame.add(maxPanel);
+		final ImagePanel avgPanel = addImage(framePanel, "Average error with max random error of " + Math.round(ERROR) + "mm");
+		final ImagePanel maxPanel = addImage(framePanel, "Max error with max random error of " + Math.round(ERROR) + "mm");
+
 		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
-		frame.setSize(new Dimension(WIDTH * 2 + 150, HEIGHT + 50));
+		frame.setSize(new Dimension(WIDTH * 2 + 120, HEIGHT + 50));
 		frame.setVisible(true);
 		
 		// beacons
@@ -66,9 +64,9 @@ public class ImageSimu {
 //		runToa1CircleThreePointsToaLateration(b1, b2, b3, errorMap);
 //		runToa2CircleThreePointsToaLateration(b1, b2, b3, b12, b22, b32, errorMap);
 //		runToa1TulipThreePointsToaLateration(b1, b2, b3, errorMap);
-//		runToa2TulipThreePointsToaLateration(b1, b2, b3, b12, b22, b32, errorMap);
+		runToa2TulipThreePointsToaLateration(b1, b2, b3, b12, b22, b32, errorMap);
 		// TDOA algorithms
-		runTdoa1FangThreePointsLateration(b1, b2, b3, errorMap);
+//		runTdoa1FangThreePointsLateration(b1, b2, b3, errorMap);
 //		runTdoa2FangThreePointsLateration(b1, b2, b3, b12, b22, b32, errorMap);
 //		runTdoa1IterativeThreePointsLateration(b1, b2, b3, errorMap);
 
@@ -101,6 +99,20 @@ public class ImageSimu {
 		avgPanel.setImg(avgImg);
 		maxPanel.setImg(maxImg);
 		frame.repaint();
+	}
+
+	private static ImagePanel addImage(final JPanel toPanel, final String title) {
+		final JPanel container = new JPanel();
+		container.setLayout(new BoxLayout(container, BoxLayout.Y_AXIS));
+		final ImagePanel imagePanel = new ImagePanel();
+		imagePanel.setPreferredSize(new Dimension(WIDTH + 50, HEIGHT));
+		container.add(imagePanel);
+		final JLabel leftLabel = new JLabel(title);
+		leftLabel.setPreferredSize(new Dimension(WIDTH + 50, 15));
+		container.add(leftLabel);
+		toPanel.add(container);
+
+		return imagePanel;
 	}
 
 	private static BufferedImage drawString(final BufferedImage img, final String text, final Color color, final int x, final int y) {
@@ -298,7 +310,7 @@ public class ImageSimu {
 	 * Run TDOA IterativeTreePointsLateration algorithm (not working, algorithm need to be debuged
 	 */
 	private static void runTdoa1IterativeThreePointsLateration(final Point b1, final Point b2, final Point b3, final Errors errorMap) {
-		final IterativeTreePointsLateration tpl1 = new IterativeTreePointsLateration(b1.x, b1.y, b2.x, b2.y, b3.x, b3.y);
+		final IterativeThreePointsLateration tpl1 = new IterativeThreePointsLateration(b1.x, b1.y, b2.x, b2.y, b3.x, b3.y);
 
 		run1BeaconMap(b1, b2, b3, errorMap, (r1, r2, r3) -> SimulationUtils.runTdoa(tpl1, r1, r2, r3));
 	}

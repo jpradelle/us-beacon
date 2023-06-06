@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * /!\ Not working algorithm ?
  */
-public class IterativeTreePointsLateration implements ThreePointsLateration {
+public class IterativeThreePointsLateration implements ThreePointsLateration {
 
 	private final double x1;
 	private final double y1;
@@ -20,7 +20,7 @@ public class IterativeTreePointsLateration implements ThreePointsLateration {
 	private final List<Point> points2 = new ArrayList<>();
 	private final List<Point> points3 = new ArrayList<>();
 	
-	public IterativeTreePointsLateration(double x1, double y1, double x2, double y2, double x3, double y3) {
+	public IterativeThreePointsLateration(double x1, double y1, double x2, double y2, double x3, double y3) {
 		this.x1 = x1;
 		this.y1 = y1;
 		this.x2 = x2;

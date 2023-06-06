@@ -5,7 +5,7 @@
  */
 package com.opensabot.multilateration;
 
-import com.opensabot.multilateration.tdoa.IterativeTreePointsLateration;
+import com.opensabot.multilateration.tdoa.IterativeThreePointsLateration;
 import com.opensabot.multilateration.swing.ImagePanel;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -43,7 +43,7 @@ public class MultilaterationSimu1 {
 		final double x3 = 3000;
 		final double y3 = 1000;
 		
-		final IterativeTreePointsLateration tpl = new IterativeTreePointsLateration(x1, y1, x2, y2, x3, y3);
+		final IterativeThreePointsLateration tpl = new IterativeThreePointsLateration(x1, y1, x2, y2, x3, y3);
 		
 		final Color red = new Color(255, 0, 0);
 		final Color green = new Color(0, 255, 0);
