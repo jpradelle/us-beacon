@@ -1,5 +1,5 @@
 /*
- * Expect 8MHz clock !!!
+ * Expect 8MHz clock.
  * Will generate a loop at 25/32.8 kHz modulation of (8 square, 16 periods low) 3 times, and wait 50ms low
  */
 

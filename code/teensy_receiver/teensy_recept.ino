@@ -147,7 +147,7 @@ class FangThreePointsLateration {
       if (dr >= 0 && dr <= 0.005)
         return 0.005;
 
-      // due to error mesure, dr can be larger than distance between to bases
+      // due to error measure, dr can be larger than distance between to bases
       // this is not possible ...
       if (dr > baseDistance)
         return baseDistance;
@@ -297,7 +297,7 @@ void myPinMode(uint8_t pin, uint8_t mode) {
 #define FREQ_25 0
 #define FREQ_32 1
 
-// 11800 µs -> 4m at soud speed
+// 11800 µs -> 4m at sound speed
 #define TIME_WINDOW 11800
 
 short pins25[] = {2, 3, 4, 5, 6, 7, 8};
@@ -489,7 +489,7 @@ double soundSpeed() {
 }
 
 /**
- * Concert micro secondes to milimeters at sound speed
+ * Concert micro seconds to millimeters at sound speed
  */
 double timeToDistance(int us) {
   return us / 1000.0 * soundSpeed();
@@ -571,7 +571,7 @@ void computePos(short freq, short startPin, short endPin, short firstB1, short l
       started[freq] = 0;
       sei();
       
-      // process calcul
+      // process compute
       int _distances[14];
       for (int i = startPin; i <= endPin; i++) {
         if (_times[i] != -1)
