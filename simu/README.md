@@ -17,7 +17,8 @@ In `com.opensabot.multilateration.ImageSimu` you can update constants:
 * `NB_ITERATION = 100` is the number of iteration to run algorithm for each position.
 * `ERROR = 68` is the maximum of random error to be added on measurements. 68mm correspond to the distance ran by 5 
   25kHz ultrasonic pulses (340 * 1/25000 * 5 = 0.068m), which feels achievable objective for the hardware.
-* `ERROR_THRESHOLD = 100` is the max value of scale displayed at right of generated image.
+* `ERROR_THRESHOLD_AVG = 100` is the max value of scale displayed at right of generated image for average error graph.
+* `ERROR_THRESHOLD_MAX = 250` is the max value of scale displayed at right of generated image for max error graph.
 
 You can also comment algorithm you don't want to run and chose one and only to run in this block of code
 ```java

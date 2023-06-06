@@ -26,6 +26,10 @@ public class Errors {
 	public double getError(final int x, final int y) {
 		return errors.get(x).get(y).getError();
 	}
+
+	public double getErrorMax(final int x, final int y) {
+		return errors.get(x).get(y).getErrorMax();
+	}
 	
 	public void addError(final int x, int y, final double error) {
 		errors.get(x).get(y).addError(error);
@@ -58,9 +62,11 @@ public class Errors {
 	
 	private static class Error {
 		private double errorSum;
+		private double errorMax;
 
 		private Error() {
 			this.errorSum = 0;
+			this.errorMax = 0;
 		}
 		
 		public void setError(final double error) {
@@ -69,6 +75,8 @@ public class Errors {
 		
 		public void addError(final double error) {
 			errorSum += error;
+			if (error > errorMax)
+				errorMax = error;
 		}
 		
 		public void divideError(final double div) {
@@ -77,6 +85,10 @@ public class Errors {
 		
 		public double getError() {
 			return errorSum;
+		}
+
+		public double getErrorMax() {
+			return errorMax;
 		}
 	}
 }

@@ -28,18 +28,25 @@ public class ImageSimu {
 	private final static int TABLE_HEIGHT_MAX = 2000; // Table max y position
 	private final static int NB_ITERATION = 100; // Number of iteration to run per position and compute average of error
 	private final static double ERROR = 68; // Max value of error randomly added to each measures in millimeter
-	private final static double ERROR_THRESHOLD = 100; // Max error value of scale in millimeter
+	private final static double ERROR_THRESHOLD_AVG = 100; // Max error value of scale in millimeter for average error graph
+	private final static double ERROR_THRESHOLD_MAX = 250; // Max error value of scale in millimeter for max error graph
 
 	/**
 	 * @param args the command line arguments
 	 */
 	public static void main(final String[] args) {
 		final JFrame frame = new JFrame();
-		final ImagePanel panel = new ImagePanel();
-		frame.add(panel);
+		frame.setLayout(new FlowLayout());
+
+		final ImagePanel avgPanel = new ImagePanel();
+		avgPanel.setPreferredSize(new Dimension(WIDTH + 50, HEIGHT));
+		frame.add(avgPanel);
+		final ImagePanel maxPanel = new ImagePanel();
+		maxPanel.setPreferredSize(new Dimension(WIDTH + 50, HEIGHT));
+		frame.add(maxPanel);
 		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
-		frame.setSize(new Dimension(WIDTH + 100, HEIGHT + 50));
+		frame.setSize(new Dimension(WIDTH * 2 + 150, HEIGHT + 50));
 		frame.setVisible(true);
 		
 		// beacons
@@ -66,24 +73,33 @@ public class ImageSimu {
 //		runTdoa1IterativeThreePointsLateration(b1, b2, b3, errorMap);
 
 		// Render errors as image.
-		BufferedImage img = new BufferedImage(WIDTH + 50, HEIGHT, BufferedImage.TYPE_3BYTE_BGR);
+		BufferedImage avgImg = new BufferedImage(WIDTH + 50, HEIGHT, BufferedImage.TYPE_3BYTE_BGR);
+		BufferedImage maxImg = new BufferedImage(WIDTH + 50, HEIGHT, BufferedImage.TYPE_3BYTE_BGR);
 		for (int i = 0; i < WIDTH; i++) {
 			for (int j = 0; j < HEIGHT; j++) {
-				img.setRGB(i, j, ImageUtils.errorToColor(errorMap.getError(i, j) / ((double) NB_ITERATION), 0, ERROR_THRESHOLD).getRGB());
+				avgImg.setRGB(i, j, ImageUtils.errorToColor(errorMap.getError(i, j) / ((double) NB_ITERATION), 0, ERROR_THRESHOLD_AVG).getRGB());
+				maxImg.setRGB(i, j, ImageUtils.errorToColor(errorMap.getErrorMax(i, j), 0, ERROR_THRESHOLD_MAX).getRGB());
 			}
 		}
 
 		// Render error scale.
 		for (int j = 0; j < HEIGHT; j++) {
-			final double scalePoint = (double) ((ERROR_THRESHOLD / (double) HEIGHT) * (HEIGHT - j));
+			final double scalePoint = (double) ((ERROR_THRESHOLD_AVG / (double) HEIGHT) * (HEIGHT - j));
 			for (int i = WIDTH + 10; i < WIDTH + 50; i++) {
-				img.setRGB(i, j, ImageUtils.errorToColor(scalePoint, 0, ERROR_THRESHOLD).getRGB());
+				avgImg.setRGB(i, j, ImageUtils.errorToColor(scalePoint, 0, ERROR_THRESHOLD_AVG).getRGB());
+			}
+			final double scalePointMax = (double) ((ERROR_THRESHOLD_MAX / (double) HEIGHT) * (HEIGHT - j));
+			for (int i = WIDTH + 10; i < WIDTH + 50; i++) {
+				maxImg.setRGB(i, j, ImageUtils.errorToColor(scalePointMax, 0, ERROR_THRESHOLD_MAX).getRGB());
 			}
 		}
-		img = drawString(img, String.valueOf(Math.round(ERROR_THRESHOLD)), Color.WHITE, WIDTH + 15, 13);
-		img = drawString(img, "0", Color.WHITE, WIDTH + 15, HEIGHT - 3);
+		avgImg = drawString(avgImg, String.valueOf(Math.round(ERROR_THRESHOLD_AVG)), Color.WHITE, WIDTH + 15, 13);
+		avgImg = drawString(avgImg, "0", Color.WHITE, WIDTH + 15, HEIGHT - 3);
+		maxImg = drawString(maxImg, String.valueOf(Math.round(ERROR_THRESHOLD_MAX)), Color.WHITE, WIDTH + 15, 13);
+		maxImg = drawString(maxImg, "0", Color.WHITE, WIDTH + 15, HEIGHT - 3);
 
-		panel.setImg(img);
+		avgPanel.setImg(avgImg);
+		maxPanel.setImg(maxImg);
 		frame.repaint();
 	}
 
