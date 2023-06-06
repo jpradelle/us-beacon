@@ -10,8 +10,6 @@ import com.opensabot.multilateration.toa.CircleThreePointsToaLateration;
 import com.opensabot.multilateration.toa.TulipThreePointsToaLateration;
 
 import java.awt.*;
-import java.awt.font.FontRenderContext;
-import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
@@ -29,8 +27,8 @@ public class ImageSimu {
 	private final static int TABLE_HEIGHT_MIN = 0; // Table min y position
 	private final static int TABLE_HEIGHT_MAX = 2000; // Table max y position
 	private final static int NB_ITERATION = 100; // Number of iteration to run per position and compute average of error
-	private final static double ERROR = 68; // Max value of error randomly added to each measures
-	private final static double ERROR_THRESHOLD = 100; // Max error value of scale
+	private final static double ERROR = 68; // Max value of error randomly added to each measures in millimeter
+	private final static double ERROR_THRESHOLD = 100; // Max error value of scale in millimeter
 
 	/**
 	 * @param args the command line arguments
