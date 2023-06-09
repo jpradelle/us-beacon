@@ -79,8 +79,8 @@ Contains 1 power card, 1 card with 3 receiver channels of 25kHz and 1 card with 
 
 ## Folder structure of project
 ### Simulation
-[simu](simu) folder contains some simulations for testing different algorithms. See [simu/README.md](simu/README.md)
-for more information.
+[simu](simu) folder contains some simulations for testing different TOA and TDOA algorithms.
+See [simu/README.md](simu/README.md) for more details of algorithms performances.
 
 ### Electronics
 [elec](elec) folder contains electronic designs of one 25kHz emitter, one 32.8kHz emitter, 3 receivers of 25kHz and
